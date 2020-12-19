@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6EB25639F0F7BD8388C56F85 /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11298DF17F271CF04B5AEA6 /* Pods_InstagramFirebase.framework */; };
+		F1170CED2577819000407D42 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1170CEC2577819000407D42 /* LoginController.swift */; };
 		F138B8F225569334008B7D57 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138B8F125569334008B7D57 /* Extensions.swift */; };
 		F138B8F425571A9D008B7D57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F138B8F325571A9D008B7D57 /* GoogleService-Info.plist */; };
 		F164CCFF255C238D00DDBFC4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CCFE255C238D00DDBFC4 /* MainTabBarController.swift */; };
 		F164CD01255C25B700DDBFC4 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F164CD00255C25B700DDBFC4 /* UserProfileController.swift */; };
 		F1B90589255484F500472BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B90588255484F500472BFE /* AppDelegate.swift */; };
 		F1B9058B255484F500472BFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B9058A255484F500472BFE /* SceneDelegate.swift */; };
-		F1B9058D255484F500472BFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B9058C255484F500472BFE /* ViewController.swift */; };
+		F1B9058D255484F500472BFE /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B9058C255484F500472BFE /* SignUpController.swift */; };
 		F1B90590255484F500472BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B9058E255484F500472BFE /* Main.storyboard */; };
 		F1B90592255484F700472BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B90591255484F700472BFE /* Assets.xcassets */; };
 		F1B90595255484F700472BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B90593255484F700472BFE /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1C04427FD194EE8E534122A4 /* Pods-InstagramFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebase.debug.xcconfig"; path = "Target Support Files/Pods-InstagramFirebase/Pods-InstagramFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		C11298DF17F271CF04B5AEA6 /* Pods_InstagramFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1170CEC2577819000407D42 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F138B8F125569334008B7D57 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F138B8F325571A9D008B7D57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F164CCFE255C238D00DDBFC4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		F1B90585255484F500472BFE /* InstagramFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B90588255484F500472BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B9058A255484F500472BFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1B9058C255484F500472BFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1B9058C255484F500472BFE /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		F1B9058F255484F500472BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1B90591255484F700472BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B90594255484F700472BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F1170CEB2577816500407D42 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F1170CEC2577819000407D42 /* LoginController.swift */,
+				F1B9058C255484F500472BFE /* SignUpController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		F138B8F0255692EB008B7D57 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +109,12 @@
 		F1B90587255484F500472BFE /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				F1170CEB2577816500407D42 /* Login */,
 				F138B8F0255692EB008B7D57 /* Utils */,
 				F1FAD9562570CA0100411245 /* UserProfile */,
 				F1B90588255484F500472BFE /* AppDelegate.swift */,
 				F1B9058A255484F500472BFE /* SceneDelegate.swift */,
 				F164CCFE255C238D00DDBFC4 /* MainTabBarController.swift */,
-				F1B9058C255484F500472BFE /* ViewController.swift */,
 				F1B9058E255484F500472BFE /* Main.storyboard */,
 				F1B90591255484F700472BFE /* Assets.xcassets */,
 				F1B90593255484F700472BFE /* LaunchScreen.storyboard */,
@@ -238,11 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B9058D255484F500472BFE /* ViewController.swift in Sources */,
+				F1B9058D255484F500472BFE /* SignUpController.swift in Sources */,
 				F1FAD9582570CA1D00411245 /* UserProfileHeader.swift in Sources */,
 				F1B90589255484F500472BFE /* AppDelegate.swift in Sources */,
 				F164CD01255C25B700DDBFC4 /* UserProfileController.swift in Sources */,
 				F164CCFF255C238D00DDBFC4 /* MainTabBarController.swift in Sources */,
+				F1170CED2577819000407D42 /* LoginController.swift in Sources */,
 				F1B9058B255484F500472BFE /* SceneDelegate.swift in Sources */,
 				F138B8F225569334008B7D57 /* Extensions.swift in Sources */,
 			);

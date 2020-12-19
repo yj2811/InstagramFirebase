@@ -31,8 +31,50 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
+        // Setting up Log Out button
+        
+        setupLogOutButton()
+        
     }
     
+    fileprivate func setupLogOutButton(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "gear").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleLogOut))
+    }
+    
+    @objc func handleLogOut(){
+        // Introduce an alert controller that has an action sheet behaviour
+        
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        // Add some actions to the alert controller
+        
+        alertController.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { (_) in
+           
+            // Performing log out
+            
+            do{
+                try Auth.auth().signOut()
+                
+                let loginController = LoginController()
+                let navController = UINavigationController(rootViewController: loginController)
+                
+                self.present(navController, animated: true, completion: nil)
+                
+                // What happens? We need to present some kind of login controller
+            } catch let signOutErr {
+                print("Failed to sign out:", signOutErr)
+            }
+            
+           
+            
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+
     // Number of cells
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -46,6 +88,8 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         
         return cell
     }
+    
+    // Below 2 for spacing
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
