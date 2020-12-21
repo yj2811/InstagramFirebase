@@ -19,6 +19,7 @@
 		F1B90590255484F500472BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B9058E255484F500472BFE /* Main.storyboard */; };
 		F1B90592255484F700472BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B90591255484F700472BFE /* Assets.xcassets */; };
 		F1B90595255484F700472BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B90593255484F700472BFE /* LaunchScreen.storyboard */; };
+		F1D045EA2590703B004AF7ED /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D045E92590703B004AF7ED /* PhotoSelectorController.swift */; };
 		F1FAD9582570CA1D00411245 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FAD9572570CA1D00411245 /* UserProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		F1B90591255484F700472BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1B90594255484F700472BFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1B90596255484F700472BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D045E92590703B004AF7ED /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		F1FAD9572570CA1D00411245 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		F85A0DA7616E32905A826956 /* Pods-InstagramFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebase.release.xcconfig"; path = "Target Support Files/Pods-InstagramFirebase/Pods-InstagramFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 		F1B90587255484F500472BFE /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				F1D045E825907003004AF7ED /* AddPhoto */,
 				F1170CEB2577816500407D42 /* Login */,
 				F138B8F0255692EB008B7D57 /* Utils */,
 				F1FAD9562570CA0100411245 /* UserProfile */,
@@ -122,6 +125,14 @@
 				F138B8F325571A9D008B7D57 /* GoogleService-Info.plist */,
 			);
 			path = InstagramFirebase;
+			sourceTree = "<group>";
+		};
+		F1D045E825907003004AF7ED /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				F1D045E92590703B004AF7ED /* PhotoSelectorController.swift */,
+			);
+			path = AddPhoto;
 			sourceTree = "<group>";
 		};
 		F1FAD9562570CA0100411245 /* UserProfile */ = {
@@ -252,6 +263,7 @@
 				F1B9058D255484F500472BFE /* SignUpController.swift in Sources */,
 				F1FAD9582570CA1D00411245 /* UserProfileHeader.swift in Sources */,
 				F1B90589255484F500472BFE /* AppDelegate.swift in Sources */,
+				F1D045EA2590703B004AF7ED /* PhotoSelectorController.swift in Sources */,
 				F164CD01255C25B700DDBFC4 /* UserProfileController.swift in Sources */,
 				F164CCFF255C238D00DDBFC4 /* MainTabBarController.swift in Sources */,
 				F1170CED2577819000407D42 /* LoginController.swift in Sources */,
